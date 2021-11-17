@@ -1,0 +1,8 @@
+<div class='card' (click)='cardClicked.emit()' [@cardFlip]="data.state">
+  <div class="face back">
+    <img src="https://images.unsplash.com/photo-1540987775685-cc4cd905e596?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80">
+</div>
+<div class="face front">
+    <img [src]="'https://source.unsplash.com/' + data.imageId + '/200x300'">
+</div>
+</div>
